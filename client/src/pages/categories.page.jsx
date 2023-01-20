@@ -17,7 +17,7 @@ export const Categories = () => {
     
     const {data:categoriesData} = useQuery(GetCategories)
     
-    const [addCategory,{data:newCategory,loading:newCategoryLoading}] = useMutation(AddCategory,{
+    const [addCategory] = useMutation(AddCategory,{
         refetchQueries:[GetSkills,GetCategories]
     })
     

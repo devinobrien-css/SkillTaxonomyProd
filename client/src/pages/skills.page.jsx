@@ -3,7 +3,7 @@ import { useState } from "react"
 import { GetCategories } from "../apollo/categories.mjs"
 import { AddSkill, GetSkills } from "../apollo/skills.mjs"
 import { ButtonMd, TitleLg } from "../components/component.library"
-import { SkillCardMd, SkillCardSm } from "../components/custom.library"
+import { SkillCardMd } from "../components/custom.library"
 import { ExploreSkill } from "../components/skills/exploreSkill.component"
 
 
@@ -15,7 +15,7 @@ export const Skills = () => {
 
     const {data:skillsData} = useQuery(GetSkills)
 
-    const [addSkill,{data,loading}] = useMutation(AddSkill,{
+    const [addSkill] = useMutation(AddSkill,{
         refetchQueries:[GetSkills,GetCategories]
     })
 

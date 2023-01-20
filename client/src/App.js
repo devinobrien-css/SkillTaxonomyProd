@@ -7,7 +7,7 @@ import { Assign } from "./pages/assign.page";
 
 const App = () => {
   const [navToggle,setNavToggle] = useState("categories")
-  const [selected,setSelected] = useState()
+  const [,setSelected] = useState()
   const [toastMessage,setToastMessage] = useState()
   const [toastStatus,setToastStatus] = useState()
 

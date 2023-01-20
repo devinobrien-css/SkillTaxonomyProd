@@ -1,8 +1,7 @@
 import { useQuery } from "@apollo/client"
 import { Icon } from "@iconify/react"
-import { useState } from "react"
 import { GetUserSkillStats } from "../../apollo/skills.mjs"
-import { ButtonMd, Modal, NumericalInput, SubTitle, TitleLg, TitleMd, TitleSm } from "../component.library"
+import { ButtonMd, NumericalInput, SubTitle, TitleLg, TitleMd, TitleSm } from "../component.library"
 import { SkillCardSm } from "../custom.library"
 
 
