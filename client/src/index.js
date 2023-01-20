@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, HttpLink } from '@apollo/client';
+
+
+const httpLink = new HttpLink({
+  uri: "https://skilltaxonomyprod-production.up.railway.app"
+});
 
 const client = new ApolloClient({
-  uri: 'skilltaxonomyprod-production.up.railway.app/',
+  link:httpLink,
   cache: new InMemoryCache(),
 });
 

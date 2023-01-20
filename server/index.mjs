@@ -132,6 +132,7 @@ const driver = neo4j.driver(
 )
 
 const neoSchema = new Neo4jGraphQL({ typeDefs, driver });
+
 neoSchema.getSchema().then((schema) => {
   const server = new ApolloServer({ schema });
   server.listen({port: process.env.PORT || 4000}).then(({ url }) => {
