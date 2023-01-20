@@ -82,7 +82,7 @@ export const AssignUsers = ({selected,setSelected}) => {
 
             <div className={` `}>
                 <TitleMd>Recommended Users</TitleMd>
-                <SubTitle>Users ranked in descending order. Select a user to view their transferrable skills</SubTitle>
+                <SubTitle>Users ranked in descending order. </SubTitle>
                 <br/>
                 {loading?(
                     <div className="flex flex-col items-center">
