@@ -44,6 +44,7 @@ export const AssignUsers = ({selected,setSelected}) => {
             <br/>
 
             <TitleMd>Selected Skills</TitleMd>
+            <SubTitle>Select skills from the left menu, deselect by clicking on the skill</SubTitle>
             <div className="flex">
                 {selected.map((skill,index)=> {
                     return (
